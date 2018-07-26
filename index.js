@@ -2,6 +2,15 @@ import reddit from './redditapi';
 const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search-input');
 
+
+  if('serviceWorker' in navigator){
+    try {
+      navigator.serviceWorker.register('./sw.js');
+      console.log(`SW successfully registered`);
+    } catch (error) {
+      console.log(`SW registration failed`);
+    }
+  }
 // form event listener
 searchForm.addEventListener('submit', e => {
     // get search term

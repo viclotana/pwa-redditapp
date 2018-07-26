@@ -107,7 +107,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 self.addEventListener('activate', function (e) {
     console.log('Service Worker is Activated');
 });
-},{}],8:[function(require,module,exports) {
+},{}],5:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -136,7 +136,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '57103' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59680' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -277,5 +277,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[8,6], null)
+},{}]},{},[5,6], null)
 //# sourceMappingURL=/sw.map

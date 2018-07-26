@@ -209,7 +209,7 @@ function truncateText(text, limit) {
     if (shortened == -1) return text;
     return text.substring(0, shortened);
 }
-},{"./redditapi":5,"./sw.js":[["sw.js",6],6]}],8:[function(require,module,exports) {
+},{"./redditapi":5,"./sw.js":[["sw.js",6],"sw.map",6]}],5:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -238,7 +238,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '57103' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59680' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -379,5 +379,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[8,1], null)
+},{}]},{},[5,1], null)
 //# sourceMappingURL=/pwa-reddit.de45aba8.map

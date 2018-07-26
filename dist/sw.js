@@ -104,7 +104,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   // Override the current require with this new one
   return newRequire;
 })({6:[function(require,module,exports) {
-
+self.addEventListener('activate', function (e) {
+    console.log('Service Worker is Activated');
+});
 },{}],8:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -276,3 +278,4 @@ function hmrAccept(bundle, id) {
   });
 }
 },{}]},{},[8,6], null)
+//# sourceMappingURL=/sw.map
